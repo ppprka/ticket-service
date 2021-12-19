@@ -1,0 +1,57 @@
+server:
+  port: 8083
+spring:
+  kafka:
+    producer:
+      client-id: 1
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    bootstrap-servers: localhost:9092
+  security:
+    enable-csrf: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ticket_service
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.jdbc.batch_size: 50
+      hibernate.jdbc.default_batch_fetch_size: 50
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      routes:
+        - id: upload_file
+          uri: http://localhost:8081/*
+          predicates:
+            - Path=/files/
+        - id: download_file
+          uri: http://localhost:8081/*
+          predicates:
+            - Path=/files/{segment}
+        - id: set_id
+          uri: http://localhost:8080/*
+          predicates:
+            - Path=/api/user/
+        - id: registate_user
+          uri: http://localhost:8080/*
+          predicates:
+            - Path=/api/user/{segment}
+        - id: send notification
+          uri: http://localhost:8086/*
+          predicates:
+            - Path=/notification/
+ext-service:
+  fileService:
+    baseUrl: ${FILE_SERVICE_URL:http://localhost:8081}
+  userService:
+    baseUrl: ${USER_SERVICE_URL:http://localhost:8080}
+  ticketService:
+    baseUrl: ${TICKET_SERVICE_URL:http://localhost:8080}
+  eventService:
+    baseUrl: ${EVENT_SERVICE_URL:http://localhost:9092}
