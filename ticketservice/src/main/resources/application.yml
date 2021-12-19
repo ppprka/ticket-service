@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ticket_service
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+#    dbcp2:
+#      default-schema: ticket_service
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+#      hibernate.default_shema: ticket_service
+      hibernate.jdbc.batch_size: 50
+      hibernate.jdbc.default_batch_fetch_size: 50
+  liquibase:
+    enabled: true
+    change-log: classpath:db.changelog/db.changelog-master.yml

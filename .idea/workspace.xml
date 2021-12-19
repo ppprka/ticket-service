@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="554260de-e459-4c2f-be7b-f6c1794a38d6" name="Changes" comment="reworked event service">
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a32de3e4-8b93-40ed-8d82-97dab670b818.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a32de3e4-8b93-40ed-8d82-97dab670b818/storage_v2/_src_/database/ticket_service.ggxW9A.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a32de3e4-8b93-40ed-8d82-97dab670b818/storage_v2/_src_/database/ticket_service.ggxW9A/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a32de3e4-8b93-40ed-8d82-97dab670b818/storage_v2/_src_/database/ticket_service.ggxW9A/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a32de3e4-8b93-40ed-8d82-97dab670b818/storage_v2/_src_/database/ticket_service.ggxW9A/schema/ticket_service.ggxW9A.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bad70bf7-1002-42bc-b33b-9e7f4c781c93.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/docker__Compose.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_21__22_34__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_21__22_36__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_21__22_36__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ticket-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/7.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/7.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/7.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/7.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/7.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/7.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/7.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/client/AircraftClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/client/EventClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/client/FileClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/client/FlightClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/client/TicketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/controller/AircraftController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/controller/FlightController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/controller/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/dto/AircraftDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/dto/FileDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/dto/FlightDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/dto/TicketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/dto/UserRoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/mapper/GenericMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/repository/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/security/ApplicationSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/security/BCryptEncoderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/util/ObjectNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/java/ru/innowise/danko/apigateway/util/interceptor/FeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gatewayservice/src/test/java/ru/innowise/danko/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/7.3.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/7.3.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/7.3.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/7.3.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/7.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/7.3.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/main/java/ru/innowise/danko/notification/NotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/main/java/ru/innowise/danko/notification/dto/EventDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/main/java/ru/innowise/danko/notification/listner/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/main/java/ru/innowise/danko/notification/repository/EventRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/main/java/ru/innowise/danko/notification/service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/main/java/ru/innowise/danko/notification/util/ObjectNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventservice/src/test/java/ru/innowise/danko/notification/NotificationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/7.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/bootWarMainClassName" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/FileserviceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/controller/FileController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/dto/ExceptionDto$ExceptionDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/dto/ExceptionDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/dto/FileDto$FileDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/dto/FileDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/service/FileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/service/impl/FileServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/util/ControllerExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/main/ru/innowise/danko/fileservice/util/exception/FileNotFound.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/classes/java/test/ru/innowise/fileservice/FileserviceApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/libs/fileservice-0.0.1-SNAPSHOT-plain.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/libs/fileservice-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/reports/tests/test/classes/ru.innowise.fileservice.FileserviceApplicationTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/reports/tests/test/packages/ru.innowise.fileservice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/resources/main/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/test-results/test/TEST-ru.innowise.fileservice.FileserviceApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/FileserviceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/dto/ExceptionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/dto/FileDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/util/ControllerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/ru/innowise/danko/fileservice/util/exception/FileNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/test/java/ru/innowise/fileservice/FileserviceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/TicketServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/controller/AircraftController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/controller/FlightController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/controller/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/dto/AircraftDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/dto/FlightDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/dto/TicketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/entity/Aircraft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/entity/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/entity/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/mapper/AircraftMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/mapper/FlightMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/mapper/GenericMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/mapper/TicketMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/repository/AircraftRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/repository/FlightRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/repository/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/repository/specification/SearchCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/repository/specification/TicketSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/service/BaseJpaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/service/impl/AircraftService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/service/impl/BaseJpaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/service/impl/FlightService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/java/ru/innowise/danko/ticketservice/util/ObjectNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/resources/db.changelog/db.changelog-master.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/main/resources/db.changelog/v1/001-initial-aircraft-table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketservice/src/test/java/ru/innowise/danko/ticketservice/service/impl/UserServiceImplTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/api-gateway">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/api-gatewayservice">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/eventservice">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/fileservice">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/notification">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ticketservice">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/fileservice">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/notification">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ticketservice">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/api-gateway">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="21urz2fr8oRj6l1auM83Z1Bycsq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="SELECTIVE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.34717417" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.innowise.danko.notification.util" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle idea" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker: Compose">
+    <configuration name="NotificationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.innowise.danko.notification.NotificationApplication" />
+      <module name="notification.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.innowise.danko.notification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="api-gateway [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api-gateway" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="notification [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notification" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="notification [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notification" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ticketservice [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ticketservice" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.innowise.danko.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fileservice.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.innowise.danko.fileservice.FileserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fileservice.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.innowise.danko.fileservice.FileserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notification.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.innowise.danko.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ticketservice.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.innowise.danko.ticketservice.TicketServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.notification [build]" />
+        <item itemvalue="Gradle.notification [clean]" />
+        <item itemvalue="Application.NotificationApplication" />
+        <item itemvalue="Gradle.ticketservice [test]" />
+        <item itemvalue="Gradle.api-gateway [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="554260de-e459-4c2f-be7b-f6c1794a38d6" name="Changes" comment="v2" />
+      <created>1638802072609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638802072609</updated>
+      <workItem from="1638802074365" duration="1433000" />
+      <workItem from="1638862496396" duration="2328000" />
+      <workItem from="1638865128096" duration="1992000" />
+      <workItem from="1638868322242" duration="1490000" />
+      <workItem from="1638870026827" duration="1092000" />
+      <workItem from="1639000119757" duration="2329000" />
+      <workItem from="1639002739979" duration="1163000" />
+      <workItem from="1639746648421" duration="80000" />
+      <workItem from="1639746832649" duration="7092000" />
+      <workItem from="1639926766163" duration="9843000" />
+      <workItem from="1639937804458" duration="750000" />
+      <workItem from="1639938880703" duration="330000" />
+      <workItem from="1639939595926" duration="2157000" />
+      <workItem from="1639942945926" duration="347000" />
+    </task>
+    <task id="LOCAL-00001" summary="fixed sdk version and deleted garbage">
+      <created>1638802803926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638802803926</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed sdk version and deleted garbage">
+      <created>1638802818658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638802818658</updated>
+    </task>
+    <task id="LOCAL-00003" summary="uploaded other services">
+      <created>1639000230469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639000230469</updated>
+    </task>
+    <task id="LOCAL-00004" summary="uploaded other services 2">
+      <created>1639001035575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639001035575</updated>
+    </task>
+    <task id="LOCAL-00005" summary="uploaded other services 2">
+      <created>1639001320405</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639001320405</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 80d099ec">
+      <created>1639001682024</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639001682024</updated>
+    </task>
+    <task id="LOCAL-00007" summary="repo recreated">
+      <created>1639747298573</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639747298573</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/fileservice" />
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/api-gateway" />
+      <path value="$PROJECT_DIR$/notification" />
+      <path value="$PROJECT_DIR$/ticketservice" />
+    </ignored-roots>
+    <MESSAGE value="fixed sdk version and deleted garbage" />
+    <MESSAGE value="uploaded other services" />
+    <MESSAGE value="uploaded other services 2" />
+    <MESSAGE value="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 80d099ec" />
+    <MESSAGE value="v1" />
+    <MESSAGE value="repo recreated" />
+    <MESSAGE value="reworked event service" />
+    <option name="LAST_COMMIT_MESSAGE" value="reworked event service" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
