@@ -1,5 +1,6 @@
 package ru.innowise.danko.notification.listner;
 
+import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
@@ -17,9 +18,7 @@ public class EventListener {
     }
 
     @KafkaListener(topics = "event")
-    public void eventListener(String urlMethod){
-        eventService.persist(EventDto.builder()
-                .urlMethod(urlMethod)
-                .build());
+    public void eventListener(ConsumerRecord<String, EventDto> consumerRecord){
+            eventService.persist(consumerRecord.value());
     }
 }

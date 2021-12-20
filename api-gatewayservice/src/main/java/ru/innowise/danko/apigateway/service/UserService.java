@@ -16,7 +16,7 @@ import ru.innowise.danko.apigateway.mapper.UserMapper;
 import ru.innowise.danko.apigateway.mapper.UserRoleMapper;
 import ru.innowise.danko.apigateway.repository.UserRepository;
 import ru.innowise.danko.apigateway.repository.UserRoleRepository;
-import ru.innowise.danko.apigateway.util.ObjectNotFound;
+import ru.innowise.danko.apigateway.util.exception.ObjectNotFound;
 
 @Service
 @Transactional

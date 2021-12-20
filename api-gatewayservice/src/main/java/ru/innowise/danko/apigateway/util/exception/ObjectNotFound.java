@@ -1,4 +1,4 @@
-package ru.innowise.danko.apigateway.util;
+package ru.innowise.danko.apigateway.util.exception;
 
 public class ObjectNotFound extends RuntimeException {
 

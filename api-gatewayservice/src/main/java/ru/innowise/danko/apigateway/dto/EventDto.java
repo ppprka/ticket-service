@@ -1,4 +1,4 @@
-package ru.innowise.danko.notification.dto;
+package ru.innowise.danko.apigateway.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

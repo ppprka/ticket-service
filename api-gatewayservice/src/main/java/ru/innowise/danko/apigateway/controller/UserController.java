@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.innowise.danko.apigateway.client.FileClient;
-import ru.innowise.danko.apigateway.client.UserClient;
 import ru.innowise.danko.apigateway.dto.UserDto;
 import ru.innowise.danko.apigateway.dto.UserRoleDto;
 import ru.innowise.danko.apigateway.service.UserService;
@@ -15,7 +14,7 @@ import java.security.Principal;
 
 @RestController
 @RequestMapping("/api/user")
-public class UserController implements UserClient {
+public class UserController {
 
     private final UserService userService;
     private final FileClient fileClient;
@@ -43,7 +42,7 @@ public class UserController implements UserClient {
         return ResponseEntity.ok(userService.addUserRoleToUser(userId, roleId));
     }
 
-    @PostMapping(path = "/upload-avatar")
+    @PostMapping(path = "/file-upload")
     public ResponseEntity<UserDto> uploadUserAvatar(@RequestPart MultipartFile multipartFile,
                                                     @RequestParam Long userId){
         UserDto userDto = userService.getUserById(userId);

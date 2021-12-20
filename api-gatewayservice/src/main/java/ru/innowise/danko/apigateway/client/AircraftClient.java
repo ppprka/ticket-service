@@ -3,11 +3,13 @@ package ru.innowise.danko.apigateway.client;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import ru.innowise.danko.apigateway.dto.AircraftDto;
-import ru.innowise.danko.apigateway.util.interceptor.FeignConfig;
+import ru.innowise.danko.apigateway.util.interceptor.FeignRequestInterceptorConfig;
+import ru.innowise.danko.apigateway.util.interceptor.FeignResponseInterceptorConfig;
 
 @FeignClient(name = "ticketService",
         url = "${ext-service.ticketService.baseUrl}",
-        configuration = FeignConfig.class)
+        configuration = {FeignRequestInterceptorConfig.class,
+                FeignResponseInterceptorConfig.class})
 public interface AircraftClient {
 
     @PostMapping("/api/aircraft")

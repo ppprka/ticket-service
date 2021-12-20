@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
-import ru.innowise.danko.apigateway.util.interceptor.FeignConfig;
+import ru.innowise.danko.apigateway.util.interceptor.FeignRequestInterceptorConfig;
 
 @FeignClient(value = "fileService",
         url = "${ext-service.fileService.baseUrl}",
-        configuration = FeignConfig.class)
+        configuration = FeignRequestInterceptorConfig.class)
 public interface FileClient {
 
     @RequestMapping(value = "/files", consumes = MediaType.MULTIPART_FORM_DATA_VALUE ,method = RequestMethod.POST)

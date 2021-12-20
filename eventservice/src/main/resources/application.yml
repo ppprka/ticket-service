@@ -8,4 +8,8 @@ spring:
   consumer:
     group-id: 1
     bootstrap-servers: localhost:9092
-    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-deserializer: ru.innowise.danko.notification.util.EventDeserializer
+    properties:
+      spring.json.trusted.packages: "*"
+    auto-offset-reset: earliest
+    enable-auto-commit: false
