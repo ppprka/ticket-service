@@ -1,0 +1,15 @@
+server:
+ port: 8086
+spring:
+ data:
+  mongodb:
+    database: mongodb
+ kafka:
+  consumer:
+    group-id: 1
+    bootstrap-servers: localhost:9092
+    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    properties:
+      spring.json.trusted.packages: "*"
+    auto-offset-reset: earliest
+    enable-auto-commit: false

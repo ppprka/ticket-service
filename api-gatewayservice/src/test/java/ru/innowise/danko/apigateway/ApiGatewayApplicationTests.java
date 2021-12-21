@@ -1,10 +1,10 @@
-package ru.innowise.fileservice;
+package ru.innowise.danko.apigateway;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.testng.annotations.Test;
 
 @SpringBootTest
-class FileserviceApplicationTests {
+class ApiGatewayApplicationTests {
 
     @Test
     void contextLoads() {
