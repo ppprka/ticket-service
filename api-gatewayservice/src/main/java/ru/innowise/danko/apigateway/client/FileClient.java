@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
-import ru.innowise.danko.apigateway.util.interceptor.FeignRequestInterceptorConfig;
+import ru.innowise.danko.apigateway.config.interceptor.FeignRequestInterceptorConfig;
 
 @FeignClient(value = "fileService",
         url = "${ext-service.fileService.baseUrl}",

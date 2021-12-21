@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import ru.innowise.danko.apigateway.client.AircraftClient;
 import ru.innowise.danko.apigateway.client.FlightClient;
 import ru.innowise.danko.apigateway.client.TicketClient;
-import ru.innowise.danko.apigateway.dto.AircraftDto;
-import ru.innowise.danko.apigateway.dto.FlightDto;
 import ru.innowise.danko.apigateway.dto.TicketDto;
 import ru.innowise.danko.apigateway.service.UserService;
 
@@ -41,24 +39,11 @@ public class TicketController {
         return ResponseEntity.ok(ticketClient.persist(ticketDto));
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<TicketDto> update(@PathVariable Long id,
+    @PutMapping("/flight-id/{id}")
+    public ResponseEntity<TicketDto> updateFlightId(@PathVariable Long id,
                                             @RequestBody TicketDto ticketDto,
-                                            @RequestParam(defaultValue = "null") Long flightId,
-                                            @RequestParam(defaultValue = "null") Long aircraftId,
                                             @Autowired Principal principal){
-
-        if(flightId != null){
-            FlightDto flightDto = flightClient.findById(flightId);
-            flightDto.setAircraftId(aircraftId);
-            flightClient.update(flightId,flightDto);
-            ticketDto.setFlightId(flightId);
-        }
-        if(aircraftId!=null){
-            AircraftDto aircraftDto = aircraftClient.findById(aircraftId);
-            aircraftDto.setFlightId(flightId);
-            aircraftClient.update(aircraftId,aircraftDto);
-        }
+        ticketDto.setFlightId(id);
         return ResponseEntity.ok(ticketClient.persist(ticketDto));
     }
 

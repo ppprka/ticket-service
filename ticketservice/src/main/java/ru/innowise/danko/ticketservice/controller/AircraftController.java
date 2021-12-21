@@ -3,7 +3,6 @@ package ru.innowise.danko.ticketservice.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ru.innowise.danko.ticketservice.dto.AircraftDto;
-import ru.innowise.danko.ticketservice.dto.FlightDto;
 import ru.innowise.danko.ticketservice.service.impl.AircraftService;
 
 @RestController
@@ -19,8 +18,8 @@ public class AircraftController {
 
 
     @PostMapping()
-    public Long persist(@RequestBody AircraftDto aircraftDto){
-        return aircraftService.persist(aircraftDto).getId();
+    public AircraftDto persist(@RequestBody AircraftDto aircraftDto){
+        return aircraftService.persist(aircraftDto);
     }
 
     @PutMapping("/{id}")

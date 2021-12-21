@@ -4,7 +4,7 @@ spring:
   kafka:
     producer:
       client-id: 1
-      value-serializer: ru.innowise.danko.apigateway.util.EventSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
     bootstrap-servers: localhost:9092
   security:
     enable-csrf: false
@@ -46,6 +46,8 @@ spring:
           uri: http://localhost:8086/*
           predicates:
             - Path=/notification/
+
+
 ext-service:
   fileService:
     baseUrl: ${FILE_SERVICE_URL:http://localhost:8081}
@@ -55,3 +57,5 @@ ext-service:
     baseUrl: ${TICKET_SERVICE_URL:http://localhost:8080}
   eventService:
     baseUrl: ${EVENT_SERVICE_URL:http://localhost:9092}
+
+

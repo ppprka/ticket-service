@@ -18,7 +18,7 @@ public class AircraftController {
 
 
     @PostMapping()
-    public Long persist(@RequestBody AircraftDto aircraftDto){
+    public AircraftDto persist(@RequestBody AircraftDto aircraftDto){
         return aircraftClient.persist(aircraftDto);
     }
 

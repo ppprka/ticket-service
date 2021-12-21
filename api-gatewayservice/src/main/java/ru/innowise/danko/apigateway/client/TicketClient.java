@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 import ru.innowise.danko.apigateway.dto.TicketDto;
-import ru.innowise.danko.apigateway.util.interceptor.FeignRequestInterceptorConfig;
+import ru.innowise.danko.apigateway.config.interceptor.FeignRequestInterceptorConfig;
 
 @FeignClient(name = "ticketService",
         url = "${ext-service.ticketService.baseUrl}",
