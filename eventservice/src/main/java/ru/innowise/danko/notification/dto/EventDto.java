@@ -12,6 +12,9 @@ import lombok.NoArgsConstructor;
 public class EventDto {
 
     private String id;
-    private String url;
-    private String body;
+    private String traceId;
+    private String urlReq;
+    private String urlResp;
+    private String bodyReq;
+    private String bodyResp;
 }

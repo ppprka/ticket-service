@@ -6,4 +6,6 @@ import ru.innowise.danko.notification.dto.EventDto;
 
 @Repository
 public interface EventRepository extends MongoRepository<EventDto, String> {
+
+    EventDto findEventDtoByTraceId(String traceId);
 }

@@ -1,4 +1,4 @@
-package ru.innowise.danko.apigateway.config;
+package ru.innowise.danko.notification.listner;
 
 import lombok.experimental.UtilityClass;
 

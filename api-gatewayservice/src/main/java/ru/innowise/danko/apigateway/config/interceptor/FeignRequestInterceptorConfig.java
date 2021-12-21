@@ -1,5 +1,6 @@
 package ru.innowise.danko.apigateway.config.interceptor;
 
+import brave.Tracer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
@@ -12,7 +13,7 @@ import ru.innowise.danko.apigateway.dto.EventDto;
 
 import java.util.Arrays;
 
-import static ru.innowise.danko.apigateway.config.KafkaTopics.EVENT_TOPIC;
+import static ru.innowise.danko.apigateway.config.KafkaTopics.EVENT_REQUEST_TOPIC;
 
 @Component
 public class FeignRequestInterceptorConfig implements RequestInterceptor{
@@ -20,23 +21,27 @@ public class FeignRequestInterceptorConfig implements RequestInterceptor{
     private final KafkaSender kafkaSender;
     private final ObjectMapper objectMapper;
     private final UrlValidator urlValidator;
+    private final Tracer tracer;
 
     @Autowired
     public FeignRequestInterceptorConfig(KafkaSender kafkaSender,
                                          ObjectMapper objectMapper,
-                                         UrlValidator urlValidator) {
+                                         UrlValidator urlValidator,
+                                         Tracer tracer) {
         this.kafkaSender = kafkaSender;
         this.objectMapper = objectMapper;
         this.urlValidator = urlValidator;
+        this.tracer = tracer;
     }
 
     @Override
     public void apply(RequestTemplate template) {
         if(Arrays.stream(urlValidator.getEventAvoidUrlList()).noneMatch(template.path()::equals)) {
-            kafkaSender.send(EVENT_TOPIC, objectToJson(EventDto
+            kafkaSender.send(EVENT_REQUEST_TOPIC, objectToJson(EventDto
                     .builder()
-                    .url(template.url())
-                    .body(template.requestBody().asString())
+                    .traceId(tracer.currentSpan().context().traceIdString())
+                    .urlReq(template.url())
+                    .bodyReq(template.requestBody().asString())
                     .build()));
         }
     }

@@ -14,7 +14,7 @@ import ru.innowise.danko.apigateway.entity.UserRole;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-12-20T17:46:09+0300",
+    date = "2021-12-21T18:51:20+0300",
     comments = "version: 1.5.0.Beta1, compiler: IncrementalProcessingEnvironment from gradle-language-java-7.3.jar, environment: Java 15.0.2 (Amazon.com Inc.)"
 )
 @Component

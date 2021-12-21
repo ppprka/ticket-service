@@ -25,6 +25,10 @@ public class EventService {
                 new ObjectNotFound(EventDto.class, id));
     }
 
+    public EventDto getByTraceId(String id){
+        return eventRepository.findEventDtoByTraceId(id);
+    }
+
     public void delete(String id){
         eventRepository
                 .delete(eventRepository
